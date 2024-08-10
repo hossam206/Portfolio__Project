@@ -1,0 +1,159 @@
+.Login,
+.PostProject {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background-color: #00000038;
+  .Login__Content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #edf2f8;
+    padding: 1rem 2rem;
+    background: var(--white-color);
+    border-radius: 15px;
+    flex-direction: row;
+    width: 400px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    height: auto;
+    .LoginHead {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      svg {
+        font-size: 30px;
+        cursor: pointer;
+        &:hover {
+          color: red;
+        }
+      }
+    }
+    p {
+      font-size: 30px;
+      font-weight: 500;
+    }
+    form {
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-start;
+        margin: 20px 0px;
+        label {
+          color: #5e5d5d;
+        }
+        input {
+          width: 100%;
+          padding: 0.95rem;
+          border: none;
+          border-radius: 7px;
+          background-color: var(--primary-color);
+          font-family: var(--font-base);
+          color: var(--secondary-color);
+          outline: none;
+        }
+      }
+      button {
+        padding: 0.5rem 2rem;
+        border-radius: 10px;
+        border: none;
+        background-color: var(--secondary-color);
+        width: 100%;
+        font-weight: 500;
+        color: var(--white-color);
+        outline: none;
+        margin: 10px 0px;
+        font-family: var(--font-base);
+
+        transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+        cursor: pointer;
+
+        &:hover {
+          background-color: #2430af;
+        }
+      }
+      .WrongMessage {
+        font-family: var(--font-base);
+        color: red;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.PostprojectContent {
+  overflow: scroll;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #edf2f8;
+  padding: 1rem 2rem;
+  background: var(--white-color);
+  border-radius: 15px;
+  flex-direction: row;
+  width: 400px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  height: auto;
+  .PostProjectHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    svg {
+      font-size: 24px;
+      cursor: pointer;
+      transition: 0.3s all ease-in-out;
+
+      &:hover {
+        color: red;
+      }
+    }
+  }
+  .ProjectContent {
+    form {
+      padding: 10px 0px;
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        margin: 10px 0px;
+        input {
+          width: 100%;
+          padding: 10px 6px;
+          border: none;
+          border-radius: 7px;
+          background-color: var(--primary-color);
+          font-family: var(--font-base);
+          color: var(--secondary-color);
+          outline: none;
+        }
+      }
+      button {
+        padding: 0.5rem 2rem;
+        border-radius: 10px;
+        border: none;
+        background-color: var(--secondary-color);
+        width: 100%;
+        font-weight: 500;
+        color: var(--white-color);
+        outline: none;
+        margin: 10px 0px;
+        font-family: var(--font-base);
+
+        transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+        cursor: pointer;
+
+        &:hover {
+          background-color: #2430af;
+        }
+      }
+    }
+  }
+}
